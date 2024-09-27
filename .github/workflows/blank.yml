@@ -46,3 +46,6 @@ jobs:
       - name: Run Script
         run: |
           bash ./run.sh
+        env:
+          SURNAME: ${{ env.SURNAME }}
+          NAME: ${{ secrets.NAME }}
